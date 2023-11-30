@@ -16,14 +16,12 @@ edition = "2018"
 name = "chrono"
 
 [features]
-# default = ["clock", "std", "oldtime", "wasmbind"]
 default = ["clock", "std", "oldtime"]
 alloc = []
 libc = []
 std = []
 clock = ["std", "winapi", "iana-time-zone"]
 oldtime = ["time"]
-wasmbind = ["wasm-bindgen", "js-sys"]
 unstable-locales = ["pure-rust-locales", "alloc"]
 __internal_bench = ["criterion"]
 __doctest = []
