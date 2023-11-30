@@ -16,7 +16,8 @@ edition = "2018"
 name = "chrono"
 
 [features]
-default = ["clock", "std", "oldtime", "wasmbind"]
+# default = ["clock", "std", "oldtime", "wasmbind"]
+default = ["clock", "std", "oldtime"]
 alloc = []
 libc = []
 std = []
